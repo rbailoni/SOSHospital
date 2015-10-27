@@ -1,0 +1,522 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FD1384031BE0296900ED1F90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1384021BE0296900ED1F90 /* AppDelegate.swift */; };
+		FD1384051BE0296900ED1F90 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1384041BE0296900ED1F90 /* ViewController.swift */; };
+		FD1384081BE0296900ED1F90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD1384061BE0296900ED1F90 /* Main.storyboard */; };
+		FD13840B1BE0296900ED1F90 /* SOSHospital.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FD1384091BE0296900ED1F90 /* SOSHospital.xcdatamodeld */; };
+		FD13840D1BE0296900ED1F90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD13840C1BE0296900ED1F90 /* Assets.xcassets */; };
+		FD1384101BE0296900ED1F90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD13840E1BE0296900ED1F90 /* LaunchScreen.storyboard */; };
+		FD13841B1BE0296900ED1F90 /* SOSHospitalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD13841A1BE0296900ED1F90 /* SOSHospitalTests.swift */; };
+		FD1384261BE0296900ED1F90 /* SOSHospitalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1384251BE0296900ED1F90 /* SOSHospitalUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FD1384171BE0296900ED1F90 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD1383F71BE0296900ED1F90 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD1383FE1BE0296900ED1F90;
+			remoteInfo = SOSHospital;
+		};
+		FD1384221BE0296900ED1F90 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD1383F71BE0296900ED1F90 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD1383FE1BE0296900ED1F90;
+			remoteInfo = SOSHospital;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FD1383FF1BE0296900ED1F90 /* SOSHospital.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SOSHospital.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD1384021BE0296900ED1F90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FD1384041BE0296900ED1F90 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FD1384071BE0296900ED1F90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FD13840A1BE0296900ED1F90 /* SOSHospital.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SOSHospital.xcdatamodel; sourceTree = "<group>"; };
+		FD13840C1BE0296900ED1F90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FD13840F1BE0296900ED1F90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FD1384111BE0296900ED1F90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD1384161BE0296900ED1F90 /* SOSHospitalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SOSHospitalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD13841A1BE0296900ED1F90 /* SOSHospitalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOSHospitalTests.swift; sourceTree = "<group>"; };
+		FD13841C1BE0296900ED1F90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD1384211BE0296900ED1F90 /* SOSHospitalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SOSHospitalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD1384251BE0296900ED1F90 /* SOSHospitalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOSHospitalUITests.swift; sourceTree = "<group>"; };
+		FD1384271BE0296900ED1F90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FD1383FC1BE0296900ED1F90 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD1384131BE0296900ED1F90 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD13841E1BE0296900ED1F90 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FD1383F61BE0296900ED1F90 = {
+			isa = PBXGroup;
+			children = (
+				FD1384011BE0296900ED1F90 /* SOSHospital */,
+				FD1384191BE0296900ED1F90 /* SOSHospitalTests */,
+				FD1384241BE0296900ED1F90 /* SOSHospitalUITests */,
+				FD1384001BE0296900ED1F90 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FD1384001BE0296900ED1F90 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FD1383FF1BE0296900ED1F90 /* SOSHospital.app */,
+				FD1384161BE0296900ED1F90 /* SOSHospitalTests.xctest */,
+				FD1384211BE0296900ED1F90 /* SOSHospitalUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FD1384011BE0296900ED1F90 /* SOSHospital */ = {
+			isa = PBXGroup;
+			children = (
+				FD1384021BE0296900ED1F90 /* AppDelegate.swift */,
+				FD1384041BE0296900ED1F90 /* ViewController.swift */,
+				FD1384061BE0296900ED1F90 /* Main.storyboard */,
+				FD13840C1BE0296900ED1F90 /* Assets.xcassets */,
+				FD13840E1BE0296900ED1F90 /* LaunchScreen.storyboard */,
+				FD1384111BE0296900ED1F90 /* Info.plist */,
+				FD1384091BE0296900ED1F90 /* SOSHospital.xcdatamodeld */,
+			);
+			path = SOSHospital;
+			sourceTree = "<group>";
+		};
+		FD1384191BE0296900ED1F90 /* SOSHospitalTests */ = {
+			isa = PBXGroup;
+			children = (
+				FD13841A1BE0296900ED1F90 /* SOSHospitalTests.swift */,
+				FD13841C1BE0296900ED1F90 /* Info.plist */,
+			);
+			path = SOSHospitalTests;
+			sourceTree = "<group>";
+		};
+		FD1384241BE0296900ED1F90 /* SOSHospitalUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FD1384251BE0296900ED1F90 /* SOSHospitalUITests.swift */,
+				FD1384271BE0296900ED1F90 /* Info.plist */,
+			);
+			path = SOSHospitalUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FD1383FE1BE0296900ED1F90 /* SOSHospital */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD13842A1BE0296900ED1F90 /* Build configuration list for PBXNativeTarget "SOSHospital" */;
+			buildPhases = (
+				FD1383FB1BE0296900ED1F90 /* Sources */,
+				FD1383FC1BE0296900ED1F90 /* Frameworks */,
+				FD1383FD1BE0296900ED1F90 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SOSHospital;
+			productName = SOSHospital;
+			productReference = FD1383FF1BE0296900ED1F90 /* SOSHospital.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FD1384151BE0296900ED1F90 /* SOSHospitalTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD13842D1BE0296900ED1F90 /* Build configuration list for PBXNativeTarget "SOSHospitalTests" */;
+			buildPhases = (
+				FD1384121BE0296900ED1F90 /* Sources */,
+				FD1384131BE0296900ED1F90 /* Frameworks */,
+				FD1384141BE0296900ED1F90 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD1384181BE0296900ED1F90 /* PBXTargetDependency */,
+			);
+			name = SOSHospitalTests;
+			productName = SOSHospitalTests;
+			productReference = FD1384161BE0296900ED1F90 /* SOSHospitalTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FD1384201BE0296900ED1F90 /* SOSHospitalUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD1384301BE0296900ED1F90 /* Build configuration list for PBXNativeTarget "SOSHospitalUITests" */;
+			buildPhases = (
+				FD13841D1BE0296900ED1F90 /* Sources */,
+				FD13841E1BE0296900ED1F90 /* Frameworks */,
+				FD13841F1BE0296900ED1F90 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD1384231BE0296900ED1F90 /* PBXTargetDependency */,
+			);
+			name = SOSHospitalUITests;
+			productName = SOSHospitalUITests;
+			productReference = FD1384211BE0296900ED1F90 /* SOSHospitalUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FD1383F71BE0296900ED1F90 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = Quaddro;
+				TargetAttributes = {
+					FD1383FE1BE0296900ED1F90 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					FD1384151BE0296900ED1F90 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = FD1383FE1BE0296900ED1F90;
+					};
+					FD1384201BE0296900ED1F90 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = FD1383FE1BE0296900ED1F90;
+					};
+				};
+			};
+			buildConfigurationList = FD1383FA1BE0296900ED1F90 /* Build configuration list for PBXProject "SOSHospital" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FD1383F61BE0296900ED1F90;
+			productRefGroup = FD1384001BE0296900ED1F90 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FD1383FE1BE0296900ED1F90 /* SOSHospital */,
+				FD1384151BE0296900ED1F90 /* SOSHospitalTests */,
+				FD1384201BE0296900ED1F90 /* SOSHospitalUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FD1383FD1BE0296900ED1F90 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD1384101BE0296900ED1F90 /* LaunchScreen.storyboard in Resources */,
+				FD13840D1BE0296900ED1F90 /* Assets.xcassets in Resources */,
+				FD1384081BE0296900ED1F90 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD1384141BE0296900ED1F90 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD13841F1BE0296900ED1F90 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FD1383FB1BE0296900ED1F90 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD1384051BE0296900ED1F90 /* ViewController.swift in Sources */,
+				FD13840B1BE0296900ED1F90 /* SOSHospital.xcdatamodeld in Sources */,
+				FD1384031BE0296900ED1F90 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD1384121BE0296900ED1F90 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD13841B1BE0296900ED1F90 /* SOSHospitalTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD13841D1BE0296900ED1F90 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD1384261BE0296900ED1F90 /* SOSHospitalUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FD1384181BE0296900ED1F90 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD1383FE1BE0296900ED1F90 /* SOSHospital */;
+			targetProxy = FD1384171BE0296900ED1F90 /* PBXContainerItemProxy */;
+		};
+		FD1384231BE0296900ED1F90 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD1383FE1BE0296900ED1F90 /* SOSHospital */;
+			targetProxy = FD1384221BE0296900ED1F90 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FD1384061BE0296900ED1F90 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD1384071BE0296900ED1F90 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FD13840E1BE0296900ED1F90 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD13840F1BE0296900ED1F90 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FD1384281BE0296900ED1F90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FD1384291BE0296900ED1F90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FD13842B1BE0296900ED1F90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SOSHospital/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.quaddro.SOSHospital;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FD13842C1BE0296900ED1F90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SOSHospital/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.quaddro.SOSHospital;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FD13842E1BE0296900ED1F90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SOSHospitalTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.quaddro.SOSHospitalTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SOSHospital.app/SOSHospital";
+			};
+			name = Debug;
+		};
+		FD13842F1BE0296900ED1F90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SOSHospitalTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.quaddro.SOSHospitalTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SOSHospital.app/SOSHospital";
+			};
+			name = Release;
+		};
+		FD1384311BE0296900ED1F90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SOSHospitalUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.quaddro.SOSHospitalUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SOSHospital;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		FD1384321BE0296900ED1F90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SOSHospitalUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.quaddro.SOSHospitalUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SOSHospital;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FD1383FA1BE0296900ED1F90 /* Build configuration list for PBXProject "SOSHospital" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD1384281BE0296900ED1F90 /* Debug */,
+				FD1384291BE0296900ED1F90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD13842A1BE0296900ED1F90 /* Build configuration list for PBXNativeTarget "SOSHospital" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD13842B1BE0296900ED1F90 /* Debug */,
+				FD13842C1BE0296900ED1F90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FD13842D1BE0296900ED1F90 /* Build configuration list for PBXNativeTarget "SOSHospitalTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD13842E1BE0296900ED1F90 /* Debug */,
+				FD13842F1BE0296900ED1F90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FD1384301BE0296900ED1F90 /* Build configuration list for PBXNativeTarget "SOSHospitalUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD1384311BE0296900ED1F90 /* Debug */,
+				FD1384321BE0296900ED1F90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FD1384091BE0296900ED1F90 /* SOSHospital.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FD13840A1BE0296900ED1F90 /* SOSHospital.xcdatamodel */,
+			);
+			currentVersion = FD13840A1BE0296900ED1F90 /* SOSHospital.xcdatamodel */;
+			path = SOSHospital.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FD1383F71BE0296900ED1F90 /* Project object */;
+}
