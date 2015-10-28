@@ -27,38 +27,40 @@ class WebService {
         return NSURLSession(configuration: self.sessionConfig)
     }()
 
-    private func request(completion: (info: [String: AnyObject]?, error: NSError?) -> Void) {
+    private func request(completion: (data: JSON?, error: NSError?) -> Void) {
         
-        var json: [String: AnyObject]?
-        var error2: NSError?
+        var json: JSON?
         
-        session.dataTaskWithURL(serviceURL) {
-            data, response, error in
+        session.dataTaskWithURL(serviceURL) { ( data: NSData?,
+                                                response: NSURLResponse?,
+                                                error: NSError?) -> Void in
             
-            //            println(data)
-            //            println(response)
-            //            println(error)
+//            println(data)
+//            println(response)
+//            println(error)
             
-            do {
-                json = try NSJSONSerialization.JSONObjectWithData(data!, options: .AllowFragments )as? [String: AnyObject]
+//            do {
+//                json = try NSJSONSerialization.JSONObjectWithData(data!, options: .AllowFragments )as? [String: AnyObject]
+//            }
+//            catch let error as NSError {
+//                errorData = error
+//            }
+//            catch {
+//                print(error)
+//            }
+            
+            if error == nil {
 
-            }
-            catch let error as NSError {
-                error2 = error
-            }
-            catch {
-                print(error)
+                json = JSON(data: data!)
+                
             }
             
             // como estamos em background é melhor chamar em main_queue
             // assim se atualizar a interface já está pronto
             dispatch_sync(dispatch_get_main_queue()) {
-                completion(info: json, error: error2)
+                completion(data: json, error: error)
             }
-//
-            }.resume()
+        }.resume()
     }
-    
-    
 
 }

@@ -2,7 +2,7 @@
 //  Hospital+CoreDataProperties.swift
 //  SOSHospital
 //
-//  Created by Swift-Noturno on 27/10/15.
+//  Created by William kwong huang on 28/10/15.
 //  Copyright © 2015 Quaddro. All rights reserved.
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
@@ -14,10 +14,10 @@ import CoreData
 
 extension Hospital {
 
-    @NSManaged var id: NSNumber?
+    @NSManaged var id: Int64
+    @NSManaged var latitude: Double
+    @NSManaged var longitude: Double
     @NSManaged var name: String?
-    @NSManaged var descriptionHospital: String?
-    @NSManaged var latitude: NSDecimalNumber?
-    @NSManaged var longitude: NSDecimalNumber?
+    @NSManaged var state: String?
 
 }
