@@ -15,6 +15,9 @@
 		FD1384101BE0296900ED1F90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD13840E1BE0296900ED1F90 /* LaunchScreen.storyboard */; };
 		FD13841B1BE0296900ED1F90 /* SOSHospitalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD13841A1BE0296900ED1F90 /* SOSHospitalTests.swift */; };
 		FD1384261BE0296900ED1F90 /* SOSHospitalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1384251BE0296900ED1F90 /* SOSHospitalUITests.swift */; };
+		FD6EABBC1BE02E380092CC64 /* Hospital+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6EABBA1BE02E380092CC64 /* Hospital+CoreDataProperties.swift */; };
+		FD6EABBD1BE02E380092CC64 /* Hospital.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6EABBB1BE02E380092CC64 /* Hospital.swift */; };
+		FD6EABC01BE04B2C0092CC64 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6EABBF1BE04B2C0092CC64 /* WebService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		FD1384211BE0296900ED1F90 /* SOSHospitalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SOSHospitalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD1384251BE0296900ED1F90 /* SOSHospitalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOSHospitalUITests.swift; sourceTree = "<group>"; };
 		FD1384271BE0296900ED1F90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD6EABBA1BE02E380092CC64 /* Hospital+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Hospital+CoreDataProperties.swift"; path = "../Hospital+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		FD6EABBB1BE02E380092CC64 /* Hospital.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Hospital.swift; path = ../Hospital.swift; sourceTree = "<group>"; };
+		FD6EABBF1BE04B2C0092CC64 /* WebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,7 @@
 		FD1384011BE0296900ED1F90 /* SOSHospital */ = {
 			isa = PBXGroup;
 			children = (
+				FD6EABBE1BE02EA60092CC64 /* Model */,
 				FD1384021BE0296900ED1F90 /* AppDelegate.swift */,
 				FD1384041BE0296900ED1F90 /* ViewController.swift */,
 				FD1384061BE0296900ED1F90 /* Main.storyboard */,
@@ -106,6 +113,7 @@
 				FD13840E1BE0296900ED1F90 /* LaunchScreen.storyboard */,
 				FD1384111BE0296900ED1F90 /* Info.plist */,
 				FD1384091BE0296900ED1F90 /* SOSHospital.xcdatamodeld */,
+				FD6EABBF1BE04B2C0092CC64 /* WebService.swift */,
 			);
 			path = SOSHospital;
 			sourceTree = "<group>";
@@ -126,6 +134,15 @@
 				FD1384271BE0296900ED1F90 /* Info.plist */,
 			);
 			path = SOSHospitalUITests;
+			sourceTree = "<group>";
+		};
+		FD6EABBE1BE02EA60092CC64 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FD6EABBA1BE02E380092CC64 /* Hospital+CoreDataProperties.swift */,
+				FD6EABBB1BE02E380092CC64 /* Hospital.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +276,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD6EABC01BE04B2C0092CC64 /* WebService.swift in Sources */,
 				FD1384051BE0296900ED1F90 /* ViewController.swift in Sources */,
+				FD6EABBC1BE02E380092CC64 /* Hospital+CoreDataProperties.swift in Sources */,
 				FD13840B1BE0296900ED1F90 /* SOSHospital.xcdatamodeld in Sources */,
+				FD6EABBD1BE02E380092CC64 /* Hospital.swift in Sources */,
 				FD1384031BE0296900ED1F90 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -486,6 +506,7 @@
 				FD13842C1BE0296900ED1F90 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FD13842D1BE0296900ED1F90 /* Build configuration list for PBXNativeTarget "SOSHospitalTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +515,7 @@
 				FD13842F1BE0296900ED1F90 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FD1384301BE0296900ED1F90 /* Build configuration list for PBXNativeTarget "SOSHospitalUITests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +524,7 @@
 				FD1384321BE0296900ED1F90 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
