@@ -2,11 +2,12 @@
 //  Hospital.swift
 //  SOSHospital
 //
-//  Created by Swift-Noturno on 27/10/15.
+//  Created by William kwong huang on 27/10/15.
 //  Copyright © 2015 Quaddro. All rights reserved.
 //
 
 import UIKit
+import MapKit
 import CoreData
 
 class Hospital: NSManagedObject {
@@ -20,7 +21,14 @@ class Hospital: NSManagedObject {
         case coordinates = "coordinates"
         case latitude = "lat"
         case longitude = "long"
+        case category = "categoria"
     }
+    
+    lazy var Location: CLLocation = {
+        return CLLocation(latitude: self.latitude, longitude: self.longitude)
+    }()
+    
+    var distance: Int = 0
     
     // MARK: - Create
     
@@ -85,6 +93,11 @@ class Hospital: NSManagedObject {
     
     func save(context: NSManagedObjectContext, data: JSON) {
         
+        // Verifica se a categoria e um hospital
+        if data[jsonEnum.category.rawValue].intValue != 1 {
+            return
+        }
+        
         // Cria uma variavel de controle
         let hospital : Hospital
         
@@ -105,7 +118,7 @@ class Hospital: NSManagedObject {
         hospital.name = data[jsonEnum.name.rawValue].stringValue
         hospital.state = data[jsonEnum.state.rawValue].stringValue
         hospital.latitude = data[jsonEnum.coordinates.rawValue][jsonEnum.latitude.rawValue].doubleValue
-        hospital.longitude = data[jsonEnum.longitude.rawValue][jsonEnum.longitude.rawValue].doubleValue
+        hospital.longitude = data[jsonEnum.coordinates.rawValue][jsonEnum.longitude.rawValue].doubleValue
         
         //        if let  c    = data["coordinates"] as? [String: AnyObject],
         //                lat  = c["lat"] as? String,

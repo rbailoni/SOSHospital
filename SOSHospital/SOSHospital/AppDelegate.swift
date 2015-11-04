@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  SOSHospital
 //
-//  Created by Swift-Noturno on 27/10/15.
+//  Created by William kwong huang on 27/10/15.
 //  Copyright © 2015 Quaddro. All rights reserved.
 //
 
@@ -13,8 +13,7 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+    
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         return true
