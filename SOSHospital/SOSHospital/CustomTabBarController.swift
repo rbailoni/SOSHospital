@@ -32,7 +32,9 @@ class CustomTabBarController: UITabBarController, CLLocationManagerDelegate {
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
-        self.locationManager.requestAuthorization()
+        if !self.locationManager.requestAuthorization() {
+            presentViewController(self.locationManager.showNegativeAlert(), animated: true, completion: nil)
+        }
         
     }
     
@@ -59,7 +61,9 @@ class CustomTabBarController: UITabBarController, CLLocationManagerDelegate {
             locationManager.stopUpdatingLocation()
             
         default:
-            locationManager.requestAuthorization()
+            if !self.locationManager.requestAuthorization() {
+                presentViewController(self.locationManager.showNegativeAlert(), animated: true, completion: nil)
+            }
             break
         }
         

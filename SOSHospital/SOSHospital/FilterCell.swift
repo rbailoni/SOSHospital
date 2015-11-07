@@ -11,6 +11,7 @@ import UIKit
 class FilterCell: UITableViewCell {
     
     static let Identifier = "CustomFilterCell"
+    static let HospitalNameImage = "Hospital_new"
     
     @IBOutlet var imagemView: UIImageView!
     @IBOutlet var hospitalLabel: UILabel!

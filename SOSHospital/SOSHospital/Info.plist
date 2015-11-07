@@ -36,5 +36,10 @@
 	</array>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>O App precisa de sua localização, deseja habilitar?</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>waze</string>
+		<string>comgooglemaps</string>
+	</array>
 </dict>
 </plist>

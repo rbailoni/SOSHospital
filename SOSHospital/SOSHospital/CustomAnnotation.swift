@@ -12,7 +12,7 @@ class CustomAnnotation: MKPointAnnotation {
     
     static let Identifier = "PinoID"
     static let PinName = "pinHospital"
-    static let HospitalLeft = "Hospital"
+    static let HospitalLeft = "Hospital_new"
     
     var imageName: String!
     var id: Int!

@@ -28,7 +28,7 @@ class Hospital: NSManagedObject {
         return CLLocation(latitude: self.latitude, longitude: self.longitude)
     }()
     
-    var distance: Int = 0
+    var distance: Double = 0
     
     // MARK: - Create
     
@@ -64,6 +64,24 @@ class Hospital: NSManagedObject {
             result = try context.executeFetchRequest(fetchRequest) as! [Hospital]
         } catch {
             print("Erro ao consultar: \(error)")
+        }
+        
+        return result
+    }
+    
+    func findHospitals(context: NSManagedObjectContext, origin: CLLocation, maxDistance: Double) -> [Hospital] {
+    
+        var result = [Hospital]()
+        
+        for item in findHospitals(context) {
+            
+            let meters = origin.distanceFromLocation(item.Location)
+            
+            if meters <= maxDistance {
+                item.distance = meters
+                result.append(item)
+            }
+            
         }
         
         return result

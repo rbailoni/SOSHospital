@@ -13,6 +13,7 @@
 		3DAA3E311BE130380055F2A9 /* Hospital.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAA3E2F1BE130380055F2A9 /* Hospital.swift */; };
 		3DD601111BE548B70051A2DC /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD601101BE548B70051A2DC /* IntroViewController.swift */; };
 		3DE292031BEA1B0800BFE590 /* CLLocationManagerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE292021BEA1B0800BFE590 /* CLLocationManagerExtension.swift */; };
+		3DFD7C731BEADCA70067AF2C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFD7C721BEADCA70067AF2C /* DetailViewController.swift */; };
 		6555E8AA1BE970CA006CA3A1 /* FilterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6555E8A91BE970CA006CA3A1 /* FilterCell.swift */; };
 		6555E8AC1BE976A6006CA3A1 /* FilterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6555E8AB1BE976A6006CA3A1 /* FilterTableViewController.swift */; };
 		6555E8AE1BE97E7E006CA3A1 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6555E8AD1BE97E7E006CA3A1 /* CustomTabBarController.swift */; };
@@ -54,6 +55,7 @@
 		3DAA3E2F1BE130380055F2A9 /* Hospital.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hospital.swift; sourceTree = "<group>"; };
 		3DD601101BE548B70051A2DC /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		3DE292021BEA1B0800BFE590 /* CLLocationManagerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLLocationManagerExtension.swift; sourceTree = "<group>"; };
+		3DFD7C721BEADCA70067AF2C /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		6555E8A91BE970CA006CA3A1 /* FilterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterCell.swift; sourceTree = "<group>"; };
 		6555E8AB1BE976A6006CA3A1 /* FilterTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterTableViewController.swift; sourceTree = "<group>"; };
 		6555E8AD1BE97E7E006CA3A1 /* CustomTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				3D4C1BD61BE0E7F5001F80BE /* data.json */,
+				FD1384091BE0296900ED1F90 /* SOSHospital.xcdatamodeld */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -170,7 +173,6 @@
 				FD13840C1BE0296900ED1F90 /* Assets.xcassets */,
 				FD13840E1BE0296900ED1F90 /* LaunchScreen.storyboard */,
 				FD1384111BE0296900ED1F90 /* Info.plist */,
-				FD1384091BE0296900ED1F90 /* SOSHospital.xcdatamodeld */,
 			);
 			path = SOSHospital;
 			sourceTree = "<group>";
@@ -209,6 +211,7 @@
 				6555E8AD1BE97E7E006CA3A1 /* CustomTabBarController.swift */,
 				FDCEEDCF1BE432E700CFE0DD /* MapViewController.swift */,
 				6555E8AB1BE976A6006CA3A1 /* FilterTableViewController.swift */,
+				3DFD7C721BEADCA70067AF2C /* DetailViewController.swift */,
 				FDCEEDD31BE4423500CFE0DD /* CustomAnnotation.swift */,
 				6555E8A91BE970CA006CA3A1 /* FilterCell.swift */,
 				FD1384041BE0296900ED1F90 /* ViewController.swift */,
@@ -367,6 +370,7 @@
 				6555E8AE1BE97E7E006CA3A1 /* CustomTabBarController.swift in Sources */,
 				FD1384031BE0296900ED1F90 /* AppDelegate.swift in Sources */,
 				FDCEEDD01BE432E700CFE0DD /* MapViewController.swift in Sources */,
+				3DFD7C731BEADCA70067AF2C /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
